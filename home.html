@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tugas Pemrograman web 1</title>
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, helvetica, sans-serif;
+}  
+.content {
+  max-width: 500px;
+  margin: auto;
+}  
+.topnav {
+  overflow: hidden;
+  background-color: #F5F5F5;
+}
+.topnav a {
+  float: left;
+  color: #076AE1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #627B87;
+  color: #000000;
+}
+</style>
+</head>
+<body>
+    
+    <div class="topnav">
+        <a class="active" href="#home">Contoh</a>
+        <a href="#contact">Contoh</a>
+        <a href="#about">Contoh</a>
+      </div>
+    <div class="content">
+    <header>
+         <h1>Tugas Pemrograman web 1</h1>
+    </header>
+
+    <section>
+        <h2>About me</h2>
+        <img src="images/foto.jpg" height="300" alt="Foto Saya" title="me">
+        <ul>
+        <li>Nama: Ghazzi Buana Dewa</p>
+        <li>Tanggal Lahir: 13 Juni 2001</p>
+        <li>Pendidikan: S1 Teknik informatika Institut Teknologi Sepuluh Nopember  </p>
+        </ul>
+    </section>    
+
+    <section>
+        <h2>Hobi</h2>
+        <p>Beberapa hobi saya termasuk: </p>
+        <ol>
+            <li>Bermain Game</li>
+            <li>Mendengarkan Musik</li>
+            <li>Menonton film</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Jadwal Kuliah</h2>
+        <table bgcolor="black">
+            <tr bgcolor="grey">
+                <th width="100">Senin</th>
+                <th width="100">Selasa</th>
+                <th width="100">Jumaat</th>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <th>KKA 10.00</th>
+                <th>Peweb 07.00</th>
+                <th>KI 07.00</th>
+            </tr>
+            <tr bgcolor="lightgrey" align="center">
+                <th>Teograf 15.00</th>
+                <th>Grafkom 13.00</th>
+                <th>Alin 13.00</th>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Contoh Form</h2>
+    </section>
+    <form action="action_page.php" method="GET">
+            <div>        
+                <label for="fname">first name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Masukan nama anda!" required>
+            </div>
+            
+            <br>
+
+            <div>
+                <label for="pass">password</label>
+                <input type="password" id="pass" name="pass" maxlength="12" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="phone">phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="bdate">birthdate</label>
+                <input type="date" id="bdate" name="bdate">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="title">title</label>
+                
+                <label for="Mr.">Mr.</label>
+                <input type="radio" id="Mr." name="title" value="Mr.">
+
+                <label for="Mrs.">Mrs.</label>
+                <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+                <label for="Ms.">Ms.</label>
+                <input type="radio" id="Ms" name="title" value="Ms.">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="payment">payment:</label>
+                <select id="payment" name="payment">
+                    <option value="visa">visa</option>
+                    <option value="mastercard">mastercard</option>
+                    <option value="giftcard">giftcard</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <input type="reset">
+            </div>
+
+            <br>
+
+            <div>
+                <input type="submit">
+            </div>
+    </form>
+    <footer>
+        <p>Terima kasih telah mengunjungi halaman web saya!</p>
+    </footer>
+</div>
+</body>
+</html>
